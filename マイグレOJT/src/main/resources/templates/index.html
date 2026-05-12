@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>従業員管理ポータル</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!--<body> 2026/05/11 画面のモダン化（Bootstrapの導入）のためコメントアウト
+<h1>従業員管理ポータル</h1>
+
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <h3>CSV一括登録</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="csvFile" accept=".csv" required>
+        <button type="submit">アップロード</button>
+    </form>
+</div>
+</body>-->
+<body class="p-4">
+<h1 class="mb-4">従業員管理ポータル</h1>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">CSV一括登録</h5>
+    </div>
+    <div class="card-body">
+        <form action="/upload" method="post" enctype="multipart/form-data" class="d-flex align-items-center">
+            <input type="file" name="csvFile" accept=".csv" required class="form-control w-50 me-2">
+            <button type="submit" class="btn btn-primary">アップロード</button>
+        </form>
+    </div>
+</div>
+
+<div class="mb-4 d-flex align-items-center">
+    <h5 class="me-3 mb-0">従業員検索</h5>
+    <form action="/" method="get" class="d-flex align-items-center">
+        <input type="text" name="department" placeholder="部署名を入力" class="form-control me-2" style="width: 200px;">
+        <button type="submit" class="btn btn-outline-secondary me-2">検索</button>
+        <a href="/" class="btn btn-link text-decoration-none">クリア</a>
+    </form>
+</div>
+
+<hr>
+
+<h3 class="mt-4 mb-3">登録済みの従業員一覧</h3>
+
+<table class="table table-striped table-hover table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <th>ID</th>
+        <th>氏名</th>
+        <th>部署名</th>
+        <th>入社年</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="emp : ${employees}">
+        <td th:text="${emp.id}">1</td>
+        <td th:text="${emp.name}">テスト太郎</td>
+        <td th:text="${emp.department}">テスト部</td>
+        <td th:text="${emp.hireYear}">2000</td>
+        <td>
+            <a th:href="@{/edit/{id}(id=${emp.id})}" class="btn btn-success btn-sm me-2">編集</a>
+
+            <form th:action="@{/delete/{id}(id=${emp.id})}" method="post" style="display:inline;">
+                <button type="submit" onclick="return confirm('本当に削除しますか？');" class="btn btn-danger btn-sm">
+                    削除
+                </button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+<!--　2026/05/11　画面のモダン化（Bootstrapの導入）のためコメントアウト
+<hr>
+&lt;!&ndash;<h3>登録済みの従業員一覧</h3>
+
+<table border="1" style="border-collapse: collapse; width: 50%;">
+    <thead>
+    <tr style="background-color: #f2f2f2;">
+        <th>ID</th>
+        <th>氏名</th>
+        <th>部署名</th>
+        <th>入社年</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="emp : ${employees}">
+        <td th:text="${emp.id}">1</td>
+        <td th:text="${emp.name}">テスト太郎</td>
+        <td th:text="${emp.department}">テスト部</td>
+        <td th:text="${emp.hireYear}">2000</td>
+        <td>
+            <a th:href="@{/edit/{id}(id=${emp.id})}" style="margin-right: 10px;">編集</a>
+
+            <form th:action="@{/delete/{id}(id=${emp.id})}" method="post" style="display:inline;">
+                <button type="submit" onclick="return confirm('本当に削除しますか？');" style="color: red;">削除</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div style="margin-bottom: 20px;">
+    <h3>従業員検索</h3>
+    <form action="/" method="get">
+        <input type="text" name="department" placeholder="部署名を入力">
+        <button type="submit" style="background-color: #e0f7fa;">検索</button>
+        <a href="/">クリア</a>
+    </form>
+</div>&ndash;&gt;
+-->
