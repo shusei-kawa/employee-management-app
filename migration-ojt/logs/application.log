@@ -1,0 +1,124 @@
+2026-05-12T15:43:18.155+09:00  INFO 22492 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Starting EmployeeRepositoryTest using Java 17.0.19 with PID 22492 (started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\マイグレOJT\マイグレOJT)
+2026-05-12T15:43:18.157+09:00  INFO 22492 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-05-12T15:43:18.862+09:00  INFO 22492 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12T15:43:18.915+09:00  INFO 22492 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2026-05-12T15:43:19.347+09:00  INFO 22492 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-12T15:43:19.432+09:00  INFO 22492 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-12T15:43:20.250+09:00  INFO 22492 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12T15:43:20.290+09:00  INFO 22492 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12T15:43:20.847+09:00  INFO 22492 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2567c091
+2026-05-12T15:43:20.848+09:00  INFO 22492 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12T15:43:20.987+09:00  INFO 22492 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: migre_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12T15:43:21.922+09:00  INFO 22492 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12T15:43:22.063+09:00  INFO 22492 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T15:43:22.167+09:00  INFO 22492 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-12T15:43:22.463+09:00  WARN 22492 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12T15:43:22.487+09:00  INFO 22492 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-12T15:43:23.340+09:00  INFO 22492 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Started EmployeeRepositoryTest in 5.696 seconds (process running for 8.427)
+2026-05-12T15:43:24.976+09:00  INFO 22492 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T15:43:24.979+09:00  INFO 22492 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-12T15:43:24.984+09:00  INFO 22492 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-12T16:10:30.516+09:00  INFO 14064 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Starting EmployeeRepositoryTest using Java 17.0.19 with PID 14064 (started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\マイグレOJT\マイグレOJT)
+2026-05-12T16:10:30.518+09:00  INFO 14064 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-05-12T16:10:31.205+09:00  INFO 14064 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12T16:10:31.261+09:00  INFO 14064 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2026-05-12T16:10:31.713+09:00  INFO 14064 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-12T16:10:31.815+09:00  INFO 14064 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-12T16:10:32.462+09:00  INFO 14064 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12T16:10:32.511+09:00  INFO 14064 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12T16:10:32.920+09:00  INFO 14064 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fb514c2
+2026-05-12T16:10:32.922+09:00  INFO 14064 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12T16:10:33.044+09:00  INFO 14064 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: migre_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12T16:10:34.035+09:00  INFO 14064 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12T16:10:34.139+09:00  INFO 14064 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:10:34.251+09:00  INFO 14064 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-12T16:10:34.566+09:00  WARN 14064 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12T16:10:34.589+09:00  INFO 14064 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-12T16:10:35.169+09:00  INFO 14064 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Started EmployeeRepositoryTest in 4.997 seconds (process running for 9.17)
+2026-05-12T16:10:36.248+09:00  INFO 14064 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:10:36.250+09:00  INFO 14064 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-12T16:10:36.254+09:00  INFO 14064 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-12T16:13:38.107+09:00  INFO 5072 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Starting EmployeeRepositoryTest using Java 17.0.19 with PID 5072 (started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\マイグレOJT\マイグレOJT)
+2026-05-12T16:13:38.109+09:00  INFO 5072 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-05-12T16:13:38.767+09:00  INFO 5072 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12T16:13:38.827+09:00  INFO 5072 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2026-05-12T16:13:39.237+09:00  INFO 5072 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-12T16:13:39.332+09:00  INFO 5072 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-12T16:13:39.950+09:00  INFO 5072 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12T16:13:39.995+09:00  INFO 5072 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12T16:13:40.287+09:00  INFO 5072 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76e9eed8
+2026-05-12T16:13:40.289+09:00  INFO 5072 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12T16:13:40.408+09:00  INFO 5072 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: migre_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12T16:13:41.571+09:00  INFO 5072 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12T16:13:41.664+09:00  INFO 5072 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:13:41.770+09:00  INFO 5072 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-12T16:13:42.063+09:00  WARN 5072 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12T16:13:42.087+09:00  INFO 5072 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-12T16:13:42.581+09:00  INFO 5072 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Started EmployeeRepositoryTest in 4.826 seconds (process running for 6.508)
+2026-05-12T16:13:43.616+09:00  INFO 5072 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:13:43.618+09:00  INFO 5072 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-12T16:13:43.624+09:00  INFO 5072 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-12T16:57:59.741+09:00  INFO 21644 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Starting EmployeeRepositoryTest using Java 17.0.19 with PID 21644 (started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\マイグレOJT\マイグレOJT)
+2026-05-12T16:57:59.745+09:00  INFO 21644 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-05-12T16:58:00.389+09:00  INFO 21644 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-12T16:58:00.453+09:00  INFO 21644 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-05-12T16:58:00.899+09:00  INFO 21644 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-12T16:58:01.006+09:00  INFO 21644 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-12T16:58:01.978+09:00  INFO 21644 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-12T16:58:02.026+09:00  INFO 21644 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12T16:58:02.470+09:00  INFO 21644 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a1c7619
+2026-05-12T16:58:02.472+09:00  INFO 21644 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12T16:58:02.595+09:00  INFO 21644 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: migre_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-12T16:58:03.679+09:00  INFO 21644 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-12T16:58:03.796+09:00  INFO 21644 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:58:03.892+09:00  INFO 21644 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-12T16:58:04.173+09:00  WARN 21644 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12T16:58:04.199+09:00  INFO 21644 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-12T16:58:04.952+09:00  INFO 21644 --- [OJT] [main] com.example.OJT.EmployeeRepositoryTest   : Started EmployeeRepositoryTest in 5.692 seconds (process running for 7.661)
+2026-05-12T16:58:06.207+09:00  INFO 21644 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12T16:58:06.209+09:00  INFO 21644 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-12T16:58:06.219+09:00  INFO 21644 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
