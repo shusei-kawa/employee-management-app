@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class マイクレOjtApplication {
+public class MigrationOjtApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(マイクレOjtApplication.class, args);
+        SpringApplication.run(MigrationOjtApplication.class, args);
     }
 
 }
