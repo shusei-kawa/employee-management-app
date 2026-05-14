@@ -1,18 +1,18 @@
-2026-05-13T12:12:03.802+09:00  INFO 6616 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Starting MigrationOjtApplication using Java 17.0.19 with PID 6616 (C:\Users\81701\Desktop\javaOJT\OJT1\employee-management\migration-ojt\build\classes\java\main started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\employee-management)
-2026-05-13T12:12:03.809+09:00  INFO 6616 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-05-13T12:12:04.619+09:00  INFO 6616 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-13T12:12:04.694+09:00  INFO 6616 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
-2026-05-13T12:12:06.125+09:00  INFO 6616 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-05-13T12:12:06.162+09:00  INFO 6616 --- [OJT] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-13T12:12:06.165+09:00  INFO 6616 --- [OJT] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-13T12:12:06.306+09:00  INFO 6616 --- [OJT] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2439 ms
-2026-05-13T12:12:07.505+09:00  INFO 6616 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-13T12:12:07.690+09:00  INFO 6616 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-13T12:12:09.323+09:00  INFO 6616 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-13T12:12:09.394+09:00  INFO 6616 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-13T12:12:10.006+09:00  INFO 6616 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d1cb59f
-2026-05-13T12:12:10.012+09:00  INFO 6616 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-13T12:12:10.185+09:00  INFO 6616 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-05-14T10:45:25.078+09:00  INFO 15376 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Starting MigrationOjtApplication using Java 17.0.19 with PID 15376 (C:\Users\81701\Desktop\javaOJT\OJT1\employee-management\migration-ojt\build\classes\java\main started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\employee-management)
+2026-05-14T10:45:25.085+09:00  INFO 15376 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-05-14T10:45:25.624+09:00  INFO 15376 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-14T10:45:25.662+09:00  INFO 15376 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2026-05-14T10:45:26.051+09:00  INFO 15376 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-14T10:45:26.062+09:00  INFO 15376 --- [OJT] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-14T10:45:26.062+09:00  INFO 15376 --- [OJT] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-14T10:45:26.106+09:00  INFO 15376 --- [OJT] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 983 ms
+2026-05-14T10:45:26.184+09:00  INFO 15376 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-14T10:45:26.559+09:00  INFO 15376 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bee8621
+2026-05-14T10:45:26.561+09:00  INFO 15376 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-14T10:45:26.666+09:00  INFO 15376 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-14T10:45:26.753+09:00  INFO 15376 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-14T10:45:27.294+09:00  INFO 15376 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-14T10:45:27.450+09:00  INFO 15376 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -24,54 +24,13 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-13T12:12:11.936+09:00  INFO 6616 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-13T12:12:12.258+09:00  INFO 6616 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-13T12:12:12.360+09:00  INFO 6616 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-13T12:12:12.616+09:00  WARN 6616 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-13T12:12:12.637+09:00  INFO 6616 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
-2026-05-13T12:12:13.043+09:00  INFO 6616 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-05-13T12:12:13.051+09:00  INFO 6616 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Started MigrationOjtApplication in 10.195 seconds (process running for 13.59)
-2026-05-13T12:12:41.285+09:00  INFO 6616 --- [OJT] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-13T12:12:41.287+09:00  INFO 6616 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-13T12:12:41.294+09:00  INFO 6616 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2026-05-13T12:16:47.394+09:00  INFO 6616 --- [OJT] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-13T12:16:47.613+09:00  INFO 6616 --- [OJT] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-13T12:16:47.685+09:00  INFO 6616 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-13T12:16:47.752+09:00  INFO 6616 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-13T12:16:47.810+09:00  INFO 6616 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-05-13T12:16:53.338+09:00  INFO 22820 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Starting MigrationOjtApplication using Java 17.0.19 with PID 22820 (C:\Users\81701\Desktop\javaOJT\OJT1\employee-management\migration-ojt\build\classes\java\main started by 81701 in C:\Users\81701\Desktop\javaOJT\OJT1\employee-management)
-2026-05-13T12:16:53.341+09:00  INFO 22820 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : No active profile set, falling back to 1 default profile: "default"
-2026-05-13T12:16:54.076+09:00  INFO 22820 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-13T12:16:54.128+09:00  INFO 22820 --- [OJT] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
-2026-05-13T12:16:54.534+09:00  INFO 22820 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-05-13T12:16:54.549+09:00  INFO 22820 --- [OJT] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-13T12:16:54.549+09:00  INFO 22820 --- [OJT] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-13T12:16:54.602+09:00  INFO 22820 --- [OJT] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1177 ms
-2026-05-13T12:16:54.780+09:00  INFO 22820 --- [OJT] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-13T12:16:54.861+09:00  INFO 22820 --- [OJT] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-13T12:16:55.338+09:00  INFO 22820 --- [OJT] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-13T12:16:55.377+09:00  INFO 22820 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-13T12:16:55.597+09:00  INFO 22820 --- [OJT] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c171746
-2026-05-13T12:16:55.599+09:00  INFO 22820 --- [OJT] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-13T12:16:55.720+09:00  INFO 22820 --- [OJT] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/migre_db]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.3
-	Default catalog/schema: migre_db/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-13T12:16:56.806+09:00  INFO 22820 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-13T12:16:56.892+09:00  INFO 22820 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-13T12:16:56.960+09:00  INFO 22820 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-13T12:16:57.165+09:00  WARN 22820 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-13T12:16:57.185+09:00  INFO 22820 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
-2026-05-13T12:16:57.491+09:00  INFO 22820 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-05-13T12:16:57.496+09:00  INFO 22820 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Started MigrationOjtApplication in 4.651 seconds (process running for 5.483)
-2026-05-13T12:17:15.236+09:00  INFO 22820 --- [OJT] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-13T12:17:15.237+09:00  INFO 22820 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-13T12:17:15.240+09:00  INFO 22820 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-14T10:45:28.290+09:00  INFO 15376 --- [OJT] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-14T10:45:28.297+09:00  INFO 15376 --- [OJT] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T10:45:28.365+09:00  INFO 15376 --- [OJT] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-14T10:45:28.577+09:00  WARN 15376 --- [OJT] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-14T10:45:28.593+09:00  INFO 15376 --- [OJT] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-14T10:45:28.893+09:00  INFO 15376 --- [OJT] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-14T10:45:28.898+09:00  INFO 15376 --- [OJT] [main] c.example.OJT.MigrationOjtApplication    : Started MigrationOjtApplication in 4.282 seconds (process running for 5.134)
+2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
