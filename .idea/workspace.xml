@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcfd4a42-00cd-4b1d-b616-bdf27fe959c5" name="変更" comment="待機、参照人数緩和">
+    <list default="true" id="bcfd4a42-00cd-4b1d-b616-bdf27fe959c5" name="変更" comment="テストコミット（修正なし）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1778640877882" duration="579000" />
       <workItem from="1778641477865" duration="742000" />
       <workItem from="1778649385664" duration="4494000" />
-      <workItem from="1778720663785" duration="2874000" />
+      <workItem from="1778720663785" duration="6810000" />
     </task>
     <task id="LOCAL-00001" summary="コメント、変数以外の全ての日本語を英語に変更">
       <option name="closed" value="true" />
@@ -183,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778664684165</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="テストコミット（修正なし）">
+      <option name="closed" value="true" />
+      <created>1778736290295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778736290295</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +202,7 @@
     <MESSAGE value="application.propertiesにて、render軌道の軽量化対応ver2" />
     <MESSAGE value="sql構文の追加（DBの仮作成）" />
     <MESSAGE value="待機、参照人数緩和" />
-    <option name="LAST_COMMIT_MESSAGE" value="待機、参照人数緩和" />
+    <MESSAGE value="テストコミット（修正なし）" />
+    <option name="LAST_COMMIT_MESSAGE" value="テストコミット（修正なし）" />
   </component>
 </project>

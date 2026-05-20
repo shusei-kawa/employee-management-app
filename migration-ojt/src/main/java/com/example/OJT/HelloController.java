@@ -10,7 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
+////2026/05/19     データの取得メソッドの変更（昇順）　追加 S
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+////2026/05/19     データの取得メソッドの変更（昇順）　追加 E
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -25,28 +30,55 @@ public class HelloController {
     @Autowired
     private EmployeeRepository repository;
 
-
+    ////2026/05/19     データの取得メソッドの変更（昇順）　削除 S
+//    @GetMapping("/")
+//    public String hello(@RequestParam(name = "department", required = false) String department, Model model) {
+//
+//        List<Employee> employeeList;
+//
+//        // もし検索窓（department）に文字が入っていたら
+//        if (department != null && !department.isEmpty()) {
+//            // その文字で絞り込み検索を行う
+//            employeeList = repository.findByDepartmentContaining(department);
+//        } else {
+//            // 文字が入っていなければ、今まで通り全件取得する
+//            employeeList = repository.findAll();
+//        }
+//
+//        // 画面（Model）に結果を渡す
+//        model.addAttribute("employees", employeeList);
+//
+//        return "index";
+//    }
+    ////2026/05/19     データの取得メソッドの変更（昇順）　削除 E
+    ////2026/05/19     データの取得メソッドの変更（昇順）　追加 S
     @GetMapping("/")
-    public String hello(@RequestParam(name = "department", required = false) String department, Model model) {
+    // @RequestParam を使って、URLから「page=〇」というページ番号を受け取ります（初期値は0ページ目）
+    public String index(@RequestParam(name = "keyword", required = false) String keyword,
+                        @RequestParam(defaultValue = "0") int page,
+                        Model model) {
 
-        List<Employee> employeeList;
-
-        // もし検索窓（department）に文字が入っていたら
-        if (department != null && !department.isEmpty()) {
-            // その文字で絞り込み検索を行う
-            employeeList = repository.findByDepartmentContaining(department);
+        if (keyword != null && !keyword.isEmpty()) {
+            // 検索された時：部署名で検索し、ID昇順で全件表示
+            List<Employee> employees = repository.findByDepartmentContainingOrderByIdAsc(keyword);
+            model.addAttribute("employees", employees);
+            model.addAttribute("keyword", keyword);
         } else {
-            // 文字が入っていなければ、今まで通り全件取得する
-            employeeList = repository.findAll();
+            // 通常時（検索キーワードがない時）：ページネーションを使用
+            // 「100」件で1ページにしています。本番はここを「100」にします！
+            Pageable pageable = PageRequest.of(page, 50, Sort.by("id").ascending());
+
+            // Repositoryからページ情報を取得
+            Page<Employee> employeePage = repository.findAll(pageable);
+
+            // 画面に渡すデータ
+            model.addAttribute("employees", employeePage.getContent()); // 実際の従業員データ3件分
+            model.addAttribute("pageInfo", employeePage); // ページネーションのボタンを作るための情報
         }
 
-        // 画面（Model）に結果を渡す
-        model.addAttribute("employees", employeeList);
-
-        return "index";
+        return "index"; // HTMLファイル名に合わせてください
     }
-
-
+    ////2026/05/19     データの取得メソッドの変更（昇順）　追加 E
     // ▼ここから追加：CSVを受け取ってDBに保存する処理
     @PostMapping("/upload")
     public String uploadCsv(@RequestParam("csvFile") MultipartFile file) {

@@ -34,7 +34,12 @@
 <div class="mb-4 d-flex align-items-center">
     <h5 class="me-3 mb-0">従業員検索</h5>
     <form action="/" method="get" class="d-flex align-items-center">
-        <input type="text" name="department" placeholder="部署名を入力" class="form-control me-2" style="width: 200px;">
+        <!--2026/05/19     データの取得メソッドの変更（昇順）　削除
+                <input type="text" name="department" placeholder="部署名を入力" class="form-control me-2" style="width: 200px;">
+        　　2026/05/19     データの取得メソッドの変更（昇順）　削除-->
+        <!--2026/05/19     データの取得メソッドの変更（昇順）　追加　S-->
+        <input type="text" name="keyword" placeholder="部署名を入力" th:value="${keyword}" class="form-control me-2" style="width: 200px;">
+        <!--2026/05/19     データの取得メソッドの変更（昇順）　追加　S-->
         <button type="submit" class="btn btn-outline-secondary me-2">検索</button>
         <a href="/" class="btn btn-link text-decoration-none">クリア</a>
     </form>
@@ -71,7 +76,38 @@
         </td>
     </tr>
     </tbody>
-</table>
+    <!--2026/05/19     データの取得メソッドの変更（昇順）　追加　S-->
+</table><div th:if="${pageInfo != null and pageInfo.totalPages > 1}" style="margin-top: 20px; text-align: center;">
+    <ul style="display: inline-flex; list-style: none; padding-left: 0;">
+
+        <li style="margin: 0 5px;">
+            <a th:href="@{/(page=0)}" th:if="${!pageInfo.first}" style="text-decoration: none; padding: 6px 12px; border: 1px solid #ddd; color: #007bff; border-radius: 4px;">&lt;&lt;</a>
+            <span th:if="${pageInfo.first}" style="padding: 6px 12px; border: 1px solid #eee; color: #bbb; border-radius: 4px; cursor: not-allowed;">&lt;&lt;</span>
+        </li>
+
+        <li style="margin: 0 5px;">
+            <a th:href="@{/(page=${pageInfo.number - 1})}" th:if="${!pageInfo.first}" style="text-decoration: none; padding: 6px 12px; border: 1px solid #ddd; color: #007bff; border-radius: 4px;">&lt;</a>
+            <span th:if="${pageInfo.first}" style="padding: 6px 12px; border: 1px solid #eee; color: #bbb; border-radius: 4px; cursor: not-allowed;">&lt;</span>
+        </li>
+
+        <li th:each="i : ${#numbers.sequence(0, pageInfo.totalPages - 1)}" style="margin: 0 5px;">
+            <span th:if="${pageInfo.number == i}" th:text="${i + 1}" style="padding: 6px 12px; border: 1px solid #007bff; background-color: #007bff; color: white; font-weight: bold; border-radius: 4px;">1</span>
+            <a th:href="@{/(page=${i})}" th:if="${pageInfo.number != i}" th:text="${i + 1}" style="text-decoration: none; padding: 6px 12px; border: 1px solid #ddd; color: #333; border-radius: 4px;">2</a>
+        </li>
+
+        <li style="margin: 0 5px;">
+            <a th:href="@{/(page=${pageInfo.number + 1})}" th:if="${!pageInfo.last}" style="text-decoration: none; padding: 6px 12px; border: 1px solid #ddd; color: #007bff; border-radius: 4px;">&gt;</a>
+            <span th:if="${pageInfo.last}" style="padding: 6px 12px; border: 1px solid #eee; color: #bbb; border-radius: 4px; cursor: not-allowed;">&gt;</span>
+        </li>
+
+        <li style="margin: 0 5px;">
+            <a th:href="@{/(page=${pageInfo.totalPages - 1})}" th:if="${!pageInfo.last}" style="text-decoration: none; padding: 6px 12px; border: 1px solid #ddd; color: #007bff; border-radius: 4px;">&gt;&gt;</a>
+            <span th:if="${pageInfo.last}" style="padding: 6px 12px; border: 1px solid #eee; color: #bbb; border-radius: 4px; cursor: not-allowed;">&gt;&gt;</span>
+        </li>
+
+    </ul>
+</div>
+<!--2026/05/19     データの取得メソッドの変更（昇順）　追加　E-->
 </body>
 </html>
 <!--　2026/05/11　画面のモダン化（Bootstrapの導入）のためコメントアウト

@@ -34,3 +34,8 @@
 2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-05-14T10:45:30.611+09:00  INFO 15376 --- [OJT] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-14T18:03:43.757+09:00  INFO 15376 --- [OJT] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-14T18:03:44.100+09:00  INFO 15376 --- [OJT] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-14T18:03:44.297+09:00  INFO 15376 --- [OJT] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-14T18:03:44.428+09:00  INFO 15376 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-14T18:03:44.502+09:00  INFO 15376 --- [OJT] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
