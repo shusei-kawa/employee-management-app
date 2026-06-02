@@ -49,35 +49,37 @@
 
 <h3 class="mt-4 mb-3">登録済みの従業員一覧</h3>
 
-<table class="table table-striped table-hover table-bordered">
-    <thead class="table-dark">
+<table class="table table-striped table-hover table-bordered align-middle">
+    <thead class="table-dark text-center">
     <tr>
-        <th>ID</th>
+        <th style="width: 150px;">ID</th>
         <th>氏名</th>
         <th>部署名</th>
-        <th>入社年</th>
-        <th>操作</th>
-    </tr>
+        <th style="width: 150px;">入社年</th>
+        <th style="width: 900px;">操作</th> </tr>
     </thead>
     <tbody>
     <tr th:each="emp : ${employees}">
-        <td th:text="${emp.id}">1</td>
+        <td class="text-center" th:text="${emp.id}">1</td>
         <td th:text="${emp.name}">テスト太郎</td>
         <td th:text="${emp.department}">テスト部</td>
-        <td th:text="${emp.hireYear}">2000</td>
+        <td class="text-center" th:text="${emp.hireYear}">2000</td>
         <td>
-            <a th:href="@{/edit/{id}(id=${emp.id})}" class="btn btn-success btn-sm me-2">編集</a>
-
-            <form th:action="@{/delete/{id}(id=${emp.id})}" method="post" style="display:inline;">
-                <button type="submit" onclick="return confirm('本当に削除しますか？');" class="btn btn-danger btn-sm">
-                    削除
-                </button>
-            </form>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <a th:href="@{/salary/{id}(id=${emp.id})}" class="btn btn-info btn-sm text-white">給与明細</a>
+                <a th:href="@{/edit/{id}(id=${emp.id})}" class="btn btn-success btn-sm">編集</a>
+                <form th:action="@{/delete/{id}(id=${emp.id})}" method="post" class="m-0 p-0">
+                    <button type="submit" onclick="return confirm('本当に削除しますか？');" class="btn btn-danger btn-sm">
+                        削除
+                    </button>
+                </form>
+            </div>
         </td>
     </tr>
     </tbody>
-    <!--2026/05/19     データの取得メソッドの変更（昇順）　追加　S-->
-</table><div th:if="${pageInfo != null and pageInfo.totalPages > 1}" style="margin-top: 20px; text-align: center;">
+</table>
+<!--2026/05/19     データの取得メソッドの変更（昇順）　追加　S-->
+<div th:if="${pageInfo != null and pageInfo.totalPages > 1}" style="margin-top: 20px; text-align: center;">
     <ul style="display: inline-flex; list-style: none; padding-left: 0;">
 
         <li style="margin: 0 5px;">

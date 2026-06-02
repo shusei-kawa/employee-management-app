@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>給与明細一覧</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-light">
+<div class="container bg-white p-5 rounded shadow-sm" style="max-width: 900px;">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+        <h1 class="h2 text-primary mb-0">給与明細履歴</h1>
+        <a href="/" class="btn btn-outline-secondary">従業員一覧に戻る</a>
+    </div>
+
+    <div class="card mb-4 border-0 bg-light">
+        <div class="card-body row text-center">
+            <div class="col-md-3 border-end">
+                <small class="text-muted d-block">従業員ID</small>
+                <strong class="fs-5" th:text="${employee.id}">1</strong>
+            </div>
+            <div class="col-md-3 border-end">
+                <small class="text-muted d-block">氏名</small>
+                <strong class="fs-5" th:text="${employee.name}">テスト太郎</strong>
+            </div>
+            <div class="col-md-3 border-end">
+                <small class="text-muted d-block">所属部署</small>
+                <strong class="fs-5" th:text="${employee.department}">開発部</strong>
+            </div>
+            <div class="col-md-3">
+                <small class="text-muted d-block">入社年</small>
+                <strong class="fs-5" th:text="${employee.hireYear} + ' 年'">2020 年</strong>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="h5 mb-3 text-secondary">支給実績一覧</h3>
+
+    <div th:if="${#lists.isEmpty(salaryList)}" class="alert alert-warning text-center">
+        この従業員の給与計算データはまだ存在しません。月末バッチを実行してください。
+    </div>
+
+    <table th:if="${!#lists.isEmpty(salaryList)}" class="table table-bordered align-middle">
+        <thead class="table-dark text-center">
+        <tr>
+            <th>対象月</th>
+            <th>基本給</th>
+            <th>控除額 (欠勤・遅刻)</th>
+            <th class="table-primary text-dark">差引支給額 (手取り)</th>
+            <th>計算実行日時</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="salary : ${salaryList}" class="text-center">
+            <td class="fw-bold text-secondary" th:text="${salary.targetMonth}">2026-05</td>
+            <td class="text-end text-success fw-bold" th:text="'¥' + ${#numbers.formatInteger(salary.baseSalary, 3, 'COMMA')}">¥350,000</td>
+            <td class="text-end text-danger" th:text="'¥' + ${#numbers.formatInteger(salary.deductionAmount, 3, 'COMMA')}">¥12,000</td>
+            <td class="text-end table-primary fw-bold text-primary fs-5" th:text="'¥' + ${#numbers.formatInteger(salary.totalAmount, 3, 'COMMA')}">¥338,000</td>
+            <td class="text-muted small" th:text="${#temporals.format(salary.calculatedAt, 'yyyy/MM/dd HH:mm:ss')}">2026/05/27 15:00:00</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
